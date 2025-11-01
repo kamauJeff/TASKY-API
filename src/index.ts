@@ -18,7 +18,7 @@ app.get("/", (_req, res) => {
 
 app.post('/auth/register', checkDetails, checkUsernameAndEmailAddress, checkPasswordStrength, register);
 app.post('/auth/login', login);
-app.post('/auth/login', logout);
+app.post('/auth/logout', logout);
 
 
 
