@@ -71,7 +71,7 @@ export const login = async function(req:Request, res: Response) {
 
 export const logout = function (req:Request, res: Response) {
     try {
-        res.send(200).clearCookie("authToken").json({message: "Successfully logged out"})
+        res.status(200).clearCookie("authToken").json({message: "Successfully logged out"})
         
     } catch (error) {
         res.status(500).json({message: "Something went wrong"})
